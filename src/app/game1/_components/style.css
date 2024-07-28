@@ -1,0 +1,57 @@
+.info-card-open {
+  padding: 10px;
+  max-width: 300px;
+  height: 350px;
+  background-color: #fef08a;
+  border: black 1px solid;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: info-card-open;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 0;
+}
+@keyframes info-card-open {
+  0% {
+    padding: 0px;
+    height: 0px;
+    width: 0px;
+  }
+  50% {
+    width: 300px;
+    height: 0px;
+    padding: 10px;
+  }
+  100% {
+    height: 350px;
+    padding: 10px;
+  }
+}
+
+.info-card-close {
+  background-color: #fef08a;
+  border: black 1px solid;
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+
+  animation-duration: 1s;
+  animation-name: info-card-close;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes info-card-close {
+  0% {
+    height: 350px;
+    padding: 10px;
+    width: 300px;
+  }
+  50% {
+    height: 0px;
+    width: 300px;
+  }
+  99% {
+    width: 0px;
+    padding: 0px;
+  }
+}

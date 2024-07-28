@@ -1,0 +1,39 @@
+.cookie {
+  position: absolute;
+  user-select: none;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: -20px;
+  content: url("https://clipart-library.com/img1/1150945.png");
+  pointer-events: none;
+  opacity: 0;
+  animation-name: disapear;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+  20% {
+    margin-left: 10px;
+  }
+  50% {
+    margin-left: -10px;
+  }
+  80% {
+    margin-left: 10px;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    top: 200px;
+  }
+}
+
+.image {
+  -webkit-user-drag: none;
+}
