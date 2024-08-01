@@ -36,7 +36,6 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     function handleOpen() {
-        console.log(isOpen)
         setIsOpen((prev) => !prev)
     }
 
