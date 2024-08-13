@@ -10,6 +10,7 @@ const config: Config = {
         extend: {
             fontFamily: {
                 pixelify: ['var(--font-pixeilfy)'],
+                inter: ['--font-inter'],
             },
             borderWidth: {
                 DEFAULT: '1px',

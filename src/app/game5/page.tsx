@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import StartingTable from './_components/StartingTable'
 import GameMap from './_components/GameMap'
 import EndGame from './_components/EndGame'
@@ -24,7 +24,16 @@ const page = () => {
 
     const [pause, setPause] = useState(false)
 
+    const snakeRef = useRef(null)
+
     const keyDown = (e: any) => {
+        // const snake = document.getElementById('snake')
+        // let direction = 'nul'
+        // snake.addEventListener('keydown', (e: any) => {
+        //     direction = e.key
+        //     console.log(direction)
+        // })
+
         if (e.key === 'ArrowUp') {
             setDirection('up')
         } else if (e.key === 'ArrowDown') {
@@ -128,10 +137,9 @@ const page = () => {
                 <div className="flex flex-col gap-4">
                     <GameMap food={food} size={size}>
                         <input
-                            onKeyDown={keyDown}
-                            onClick={startGame}
-                            id="snake"
                             autoFocus
+                            onKeyDownCapture={keyDown}
+                            id="snake"
                             style={{ left: x * 20, top: y * 20 }}
                             className={`bg-black w-[20px] h-[20px] absolute `}
                         ></input>

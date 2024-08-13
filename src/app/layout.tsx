@@ -3,12 +3,12 @@ import { Inter, Pixelify_Sans } from 'next/font/google'
 import './globals.css'
 import NavBar from './_components/NavBar'
 
-const inter = Inter({ subsets: ['latin'] })
 const pixelify = Pixelify_Sans({
     weight: '400',
     subsets: ['latin'],
     variable: '--font-pixeilfy',
 })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
     title: 'Playground',
@@ -23,7 +23,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.className} ${pixelify.variable}  min-h-screen flex flex-col justify-between gap-10`}
+                className={`${inter.variable} ${pixelify.variable}  min-h-screen flex flex-col justify-between gap-10`}
             >
                 <NavBar></NavBar>
                 {children}

@@ -2,12 +2,12 @@ import React from 'react'
 
 interface props {
     open: boolean
-    handleclick: any
+    handleClick: () => void
     className?: string
 }
 
-const Hamburger = (props: props) => {
-    if (props.open) {
+const Hamburger = ({ open, handleClick, className }: props) => {
+    if (open) {
         return (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -15,8 +15,8 @@ const Hamburger = (props: props) => {
                 viewBox="0 -0.5 25 25"
                 width={35}
                 height={35}
-                onClick={props.handleclick}
-                {...props}
+                onClick={handleClick}
+                className={className}
             >
                 <path
                     fill="#000"
@@ -32,8 +32,8 @@ const Hamburger = (props: props) => {
                 viewBox="0 -0.5 25 25"
                 width={35}
                 height={35}
-                onClick={props.handleclick}
-                {...props}
+                onClick={handleClick}
+                className={className}
             >
                 <path
                     fill="#000"

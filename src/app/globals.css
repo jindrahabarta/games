@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: var(--font-inter);
+}
+
 .expand {
     padding: 10px;
 }

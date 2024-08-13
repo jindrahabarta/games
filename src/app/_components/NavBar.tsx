@@ -68,7 +68,7 @@ const NavBar = () => {
                 </div>
                 <Hamburger
                     className="md:hidden block hover:cursor-pointer"
-                    handleclick={handleOpen}
+                    handleClick={handleOpen}
                     open={isOpen}
                 />
             </div>
