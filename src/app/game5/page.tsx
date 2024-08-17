@@ -7,7 +7,7 @@ import Play from '../_icons/Play'
 import Pause from '../_icons/Pause'
 import Resume from '../_icons/Resume'
 
-const page = () => {
+const Game5 = () => {
     const [gameManager, setGameManager] = useState('selection')
 
     const [x, setX] = useState(0)
@@ -170,4 +170,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Game5

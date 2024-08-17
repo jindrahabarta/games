@@ -7,7 +7,7 @@ import Scissors from './icons/Scissors'
 import Heart from './icons/Heart'
 import { motion } from 'framer-motion'
 
-const page = () => {
+const Game4 = () => {
     const pole = ['rock', 'paper', 'scissors']
     const [random, setRandom] = useState<string>()
     const [win, setWin] = useState<number>(-1)
@@ -203,4 +203,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Game4
