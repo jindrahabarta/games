@@ -24,7 +24,8 @@ const Game3 = () => {
 
     return (
         <main className=" flex flex-col gap-2 items-center justify-center h-screen">
-            <div className="flex gap-1 items-center absolute top-20 left-5">
+            <p>in progress</p>
+            {/* <div className="flex gap-1 items-center absolute top-20 left-5">
                 <p>Now playing:</p>
                 {player === 0 ? (
                     <CrossIcon size="small"></CrossIcon>
@@ -41,7 +42,7 @@ const Game3 = () => {
                         handleClick={change}
                     ></Card>
                 ))}
-            </Board>
+            </Board> */}
         </main>
     )
 }

@@ -61,7 +61,7 @@ const Game2 = () => {
     }
 
     return (
-        <main className=" flex flex-col-reverse lg:flex-row gap-2 items-center justify-center w-full h-screen px-2">
+        <main className=" flex flex-col-reverse lg:flex-row gap-2 items-center justify-center w-full h-screen px-2 mt-36 lg:mt-0">
             <section className="p-10 lg:w-80 w-full bg-orange-200 rounded-xl shadow-slex-col m shadow-slate-300 min-h-96 max-h-96 overflow-hidden overflow-y-auto">
                 <h1 className="font-bold mb-2">Upgrades:</h1>
                 <div className="flex flex-col gap-3 w-full ">
