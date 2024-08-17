@@ -99,17 +99,17 @@ const Game1 = () => {
                                         How to play
                                     </h1>
                                     <p>
-                                        The rules of the game "Ten Questions":
-                                        The player draws 10 questions
-                                        sequentially and answers each one. The
-                                        player has 30 seconds to respond.
-                                        Answers must be quick and honest.
-                                        Failure to respond in time or providing
-                                        unclear answers results in losing a
-                                        point. Questions can be of any kind. The
-                                        goal is to score as many points as
-                                        possible. The player with the highest
-                                        score after 10 questions wins.
+                                        The rules of the game &quot;Ten
+                                        Questions&quot;: The player draws 10
+                                        questions sequentially and answers each
+                                        one. The player has 30 seconds to
+                                        respond. Answers must be quick and
+                                        honest. Failure to respond in time or
+                                        providing unclear answers results in
+                                        losing a point. Questions can be of any
+                                        kind. The goal is to score as many
+                                        points as possible. The player with the
+                                        highest score after 10 questions wins.
                                     </p>
                                 </motion.div>
                             )}
